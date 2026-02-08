@@ -9,41 +9,42 @@
   </head>
   <body>
     <form>
-    <div class="row">
-        <div class="col">
-            <label for="First Name" class="form-label">First Name</label>
-            <input type="first_name" class="form-control" id="first_name" aria-describedby="first_name">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="First Name" class="form-label">First Name</label>
+                <input type="first_name" class="form-control" id="first_name" aria-describedby="first_name">
+            </div>
+            <div class="col-md-6">
+                <label for="Last Name" class="form-label">Last Name</label>
+                <input type="last_name" class="form-control" id="last_name">
+            </div>
         </div>
-        <div class="col">
-            <label for="Last Name" class="form-label">Last Name</label>
-            <input type="last_name" class="form-control" id="last_name">
+        <div class="col-12">
+            <label for="Address" class="form-label">Address</label>
+            <input type="Address" class="form-control" id="Address">
         </div>
-    </div>
+        <div class="col-md-6">
+            <label for="City" class="form-label">City</label>
+            <input type="City" class="form-control" id="City">
+        </div>
+        <div class="col-md-4">
+            <label for="State">State</label>
+            <select class="form-select" id="State" aria-label="Michigan">
+                <option selected>Michigan</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Michigan">Michigan</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="Zip" class="form-label">Zip</label>
+            <input type="Zip" class="form-control" id="Zip">
+        </div>
+        <div class="col-12">
+            <label for="Phone" class="form-label">Phone</label>
+            <input type="Phone" class="form-control" id="Phone">
+        </div>
     <div class="mb-3">
-        <label for="Address" class="form-label">Address</label>
-        <input type="Address" class="form-control" id="Address">
-    </div>
-    <div class="mb-3">
-        <label for="City" class="form-label">City</label>
-        <input type="City" class="form-control" id="City">
-    </div>
-    <label for="State">State</label>
-    <select class="form-select" id="State" aria-label="Michigan">
-        <option selected>Michigan</option>
-        <option value="Alabama">Alabama</option>
-        <option value="Maryland">Maryland</option>
-        <option value="Michigan">Michigan</option>
-    </select>
-
-    <div class="mb-3">
-        <label for="Zip" class="form-label">Zip</label>
-        <input type="Zip" class="form-control" id="Zip">
-    </div>
-    <div class="mb-3">
-        <label for="Phone" class="form-label">Phone</label>
-        <input type="Phone" class="form-control" id="Phone">
-    </div>
-      <div class="mb-3">
         <label for="Email" class="form-label">Email</label>
         <input type="Email" class="form-control" id="Email">
     </div>

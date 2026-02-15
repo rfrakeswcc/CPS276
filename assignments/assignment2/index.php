@@ -1,8 +1,11 @@
+
     <?php
-        $numbers = [];
+        
+            $numbers = [];
         for ( $i = 0; $i <= 49; $i++ )
         {
-            $numbers[i] = ( $i + 1 );
+            echo $i;
+            $numbers[$i] = ( $i + 1 );
             echo $number;
         }
         foreach ( $numbers as $number )
@@ -10,6 +13,7 @@
             echo $number;
         }
     ?>
+
 
 <!doctype html>
 <html lang="en">

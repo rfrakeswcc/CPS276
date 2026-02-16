@@ -2,7 +2,7 @@
 <?php
         
         $numbers = [];
-        $evenNumbers = '';
+        $evenNumbers = 'Even Numbers: ';
         for ( $i = 0; $i < 50; $i++ )
             {
                 $numbers[$i] = ( $i + 1 );
@@ -22,13 +22,34 @@
                 }
             }
     $form = <<<END
-        <form>
-            <div class="row">
+        <form method="post">
+            <div class="row mt-3">
                 <label for="Email address" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="Email address" placeholder="name@example.com">
             </div>
+            <div class="row mt-3">
+                <label for="Example textarea" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="Example textarea" rows="4"></textarea> 
+            </div>
         </form>
         END;
+    
+
+    function createTable( $rows, $columns )
+        {
+            $table = '<table class="table table-bordered mt-3">';
+            for ( $r = 1; $r <= $rows; $r++ )
+                {
+                    $table .= '<tr>';
+                    for ( $c = 1; $c <= $columns; $c++ )
+                        {
+                            $table .= "<td>Row {$r}, Col {$c}</td>";
+                        }
+                        $table .= '</tr>';
+                }
+                $table .= '</table>';
+                return $table;
+        }
 ?>
 
 
@@ -44,6 +65,6 @@
     <?php
         echo $evenNumbers;
         echo $form;
-       /* echo createTable(8, 6); */
+        echo createTable(8, 6);
     ?> 
 </body>

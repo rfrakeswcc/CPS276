@@ -43,7 +43,7 @@
                     {
                     $table .= "<td>Row {$r}, Col {$c}</td>";
                     }
-                    $table .= '</tr>';
+                $table .= '</tr>';
                 }
             $table .= '</table>';
             return $table;

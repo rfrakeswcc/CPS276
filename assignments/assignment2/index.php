@@ -1,26 +1,25 @@
 
 <?php
-        
-        $numbers = [];
-        $evenNumbers = 'Even Numbers: ';
-        for ( $i = 0; $i < 50; $i++ )
+    $numbers = [];
+    $evenNumbers = 'Even Numbers: ';
+    for ( $i = 0; $i < 50; $i++ )
+        {
+        $numbers[$i] = ( $i + 1 );
+        }
+    foreach ( $numbers as $number )
+        {
+        if ( ( $number % 2) == 0 )
             {
-                $numbers[$i] = ( $i + 1 );
-            }
-        foreach ( $numbers as $number )
-            {
-            if ( ( $number % 2) == 0 )
+            if ( $number < 50 )
                 {
-                if ( $number < 50 )
-                    {
-                    $evenNumbers = $evenNumbers . strval( $number ) . ' - ';
-                    }
-                else
-                    {
-                    $evenNumbers = $evenNumbers . strval( $number );
-                    }
+                $evenNumbers = $evenNumbers . strval( $number ) . ' - ';
+                }
+            else
+                {
+                $evenNumbers = $evenNumbers . strval( $number );
                 }
             }
+        }
     $form = <<<END
         <form method="post">
             <div class="row mt-3">
@@ -33,22 +32,21 @@
             </div>
         </form>
         END;
-    
 
     function createTable( $rows, $columns )
         {
             $table = '<table class="table table-bordered mt-3">';
             for ( $r = 1; $r <= $rows; $r++ )
                 {
-                    $table .= '<tr>';
-                    for ( $c = 1; $c <= $columns; $c++ )
-                        {
-                            $table .= "<td>Row {$r}, Col {$c}</td>";
-                        }
-                        $table .= '</tr>';
+                $table .= '<tr>';
+                for ( $c = 1; $c <= $columns; $c++ )
+                    {
+                    $table .= "<td>Row {$r}, Col {$c}</td>";
+                    }
+                    $table .= '</tr>';
                 }
-                $table .= '</table>';
-                return $table;
+            $table .= '</table>';
+            return $table;
         }
 ?>
 

@@ -64,5 +64,5 @@
         echo $evenNumbers;
         echo $form;
         echo createTable(8, 6);
-    ?> 
+    ?>
 </body>

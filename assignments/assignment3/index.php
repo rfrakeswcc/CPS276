@@ -19,11 +19,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <body class="container">
         <form method="post" action="#">
             <div class="mt-3">
-              <button type="Add Names" class="btn btn-primary">Add Names</button>
-              <button type="Clear Names" class="btn btn-primary">Clear Names</button>
+              <button type="add_names" class="btn btn-primary">Add Names</button>
+              <button type="clear_names" class="btn btn-primary">Clear Names</button>
             </div>
             <div class="mt-3">
-              <label for="Enter Name" class="form-label">Enter Name</label>
+              <label for="name" class="form-label">Enter Name</label>
               <input type="text" class="form-control" id="Enter Name">
             </div>
             <div class="mt-3">

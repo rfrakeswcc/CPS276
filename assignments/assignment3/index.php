@@ -2,7 +2,7 @@
 $output = "";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
- require_once 'processNames.php'>
+ require_once 'processNames.php';
  $output = addClearNames();
 }
 ?>
@@ -19,12 +19,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <body class="container">
         <form method="post" action="#">
             <div class="mt-3">
-              <button type="add_names" class="btn btn-primary">Add Names</button>
-              <button type="clear_names" class="btn btn-primary">Clear Names</button>
+              <button type="submit" name="add" class="btn btn-primary">Add Names</button>
+              <button type="submit" name="clear" class="btn btn-primary">Clear Names</button>
             </div>
             <div class="mt-3">
-              <label for="name" class="form-label">Enter Name</label>
-              <input type="text" class="form-control" id="Enter Name">
+              <label for="names" class="form-label">Enter Name</label>
+              <input type="text" class="form-control" id="names" name="names">
             </div>
             <div class="mt-3">
               <label for="namelist" class="form-label">List of Names</label>

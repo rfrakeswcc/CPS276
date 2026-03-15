@@ -16,7 +16,7 @@
             </div>
             <div class="mt-3">
               <label for="filecontent" class="form-label">File Content</label>
-              <textarea style="height: 500px;" class="form-control" id="filecontent" name="filecontent"><?php echo $output ?></textarea>
+              <textarea style="height: 500px;" class="form-control" id="filecontent" name="filecontent"></textarea>
             </div>
             <div class="mt-3">
               <button type="submit" name="submit" class="btn btn-primary">Add Names</button>

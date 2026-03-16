@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
   <body class="container">
     <header>
-      <h1>Testing File and Directory Assignment</h1>
+      <h1>File and Directory Assignment</h1>
       <p>Enter a folder name and the contents of a file. Folder names should contain alpha numeric characters only.</p>
     </header>
     <?php

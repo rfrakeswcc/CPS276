@@ -1,5 +1,5 @@
 <?php
-    require_once 'pwrd.php';
+require_once __DIR__ . '/../../config.php';
 class Db_conn {    
     private $conn;
 
@@ -9,7 +9,7 @@ class Db_conn {
             $dbHost = 'localhost';
             $dbName = 'files';
             $dbUsr = 'rfrakes';
-            $dbPass = '$hashed_password';
+            $dbPass = '$password';
 
             // Establishing the PDO connection
             $this->conn = new PDO('mysql:host=' . $dbHost . ';dbname=' . $dbName, $dbUsr, $dbPass);

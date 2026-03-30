@@ -1,10 +1,10 @@
 <?php
-    require_once 'pwrd.php';
+require_once __DIR__ . '/../../config.php';
 // Database connection
 $host = "localhost";
 $dbname = "files";
 $username = "rfrakes";
-$password = "$hashed_password";
+$password = "$password";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

@@ -1,9 +1,10 @@
 <?php
+    require_once 'pwrd.php';
 // Database connection
 $host = "localhost";
 $dbname = "files";
 $username = "rfrakes";
-$password = "xxxxx";
+$password = "$hashed_password";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

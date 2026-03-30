@@ -1,8 +1,7 @@
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST")
         {
-        require_once 'fileUploadProc.php';
-        require_once 'php/listFilesProc.php';
+        require_once 'php/fileUploadProc.php';
         }
 ?>
 

@@ -1,5 +1,5 @@
 <?php
-    require_once '../../pwrd.php';
+    require_once 'pwrd.php';
 // Database connection
 $host = "localhost";
 $dbname = "files";

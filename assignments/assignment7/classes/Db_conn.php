@@ -1,5 +1,5 @@
 <?php
-    require_once '../../pwrd.php';
+    require_once 'pwrd.php';
 class Db_conn {    
     private $conn;
 

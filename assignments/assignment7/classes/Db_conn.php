@@ -6,8 +6,8 @@ class Db_conn {
     public function dbOpen(){
         try {
             $dbHost = 'localhost';
-            $dbName = 'sshaper';
-            $dbUsr = 'sshaper';
+            $dbName = 'files';
+            $dbUsr = 'rfrakes';
             $dbPass = 'xxxxx';
 
             // Establishing the PDO connection
